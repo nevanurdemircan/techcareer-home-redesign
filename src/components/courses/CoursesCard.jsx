@@ -23,11 +23,11 @@ export const CoursesCard = ({ img, title, description, tags, hour, level, levelI
             }}>
                 <i className="bi bi-bookmark"></i>
             </div>
-            {/* Image with rounded corners */}
+
             <Card.Img
                 variant="top"
                 src={img}
-                style={{ borderRadius: '20px' }}  // Adds rounded corners to the image
+                style={{ borderRadius: '20px' }}
             />
             <Card.Body style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flexGrow: 1 }}>
                 {/* Title - Centered */}
@@ -38,19 +38,18 @@ export const CoursesCard = ({ img, title, description, tags, hour, level, levelI
                     textAlign: 'center',
                     margin: '10px 0',
                     flexShrink: 0,
-                    fontSize: '18px', // Font size reduced for title
+                    fontSize: '18px',
                 }}>
                     {title}
                 </Card.Title>
 
-                {/* Description - Centered and Wrapping */}
                 <Card.Text style={{
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
                     textAlign: 'center',
                     margin: '10px 0',
-                    fontSize: '12px', // Font size reduced for title
+                    fontSize: '12px',
                     marginBottom: 'auto',
 
 
@@ -58,15 +57,14 @@ export const CoursesCard = ({ img, title, description, tags, hour, level, levelI
                     {description}
                 </Card.Text>
 
-                {/* Tags Section */}
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', justifyContent: 'center', marginTop: '1px' }}>
                     {tags.map((tag, index) => (
                         <span key={index} style={{
                             color: '#00C26D',
                             border: "none",
-                            padding: '3px 3px',  // Smaller padding
-                            borderRadius: '18px',  // Slightly smaller border radius
-                            fontSize: '13px',  // Smaller font size
+                            padding: '3px 3px',
+                            borderRadius: '18px',
+                            fontSize: '13px',
                             marginTop: '2px',
                         }}>
                             {tag}
@@ -75,13 +73,13 @@ export const CoursesCard = ({ img, title, description, tags, hour, level, levelI
                 </div>
 
                 <Row style={{
-                    width: '346px',        // Width: Fill 346px
-                    height: '24px',       // Height: Fixed 24px
-                    gap: '8px',           // Gap: 8px between items
-                    opacity: '1',         // Opacity: 1 (visible)
-                    display: 'flex',      // Flexbox layout
-                    alignItems: 'center', // Vertical alignment
-                    justifyContent: 'center' // Horizontal alignment
+                    width: '346px',
+                    height: '24px',
+                    gap: '8px',
+                    opacity: '1',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
                 }}>
                     <Col style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <img

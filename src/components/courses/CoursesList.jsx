@@ -72,8 +72,8 @@ export const CoursesList = () => {
                     style={{
                         backgroundColor: '#00C26D',
                         borderColor: '#00C26D',
-                        borderRadius: '20px', // Daha yuvarlak köşeler
-                        padding: '10px 30px' // İç kenar boşlukları
+                        borderRadius: '20px',
+                        padding: '10px 30px'
                     }}
                     size="lg"
                 >
