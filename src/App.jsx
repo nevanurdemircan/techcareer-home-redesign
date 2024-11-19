@@ -1,8 +1,10 @@
+
+import React from "react";
+import {Courses} from "@od/pages/Courses.jsx";
+
 function App() {
   return (
-    <>
-      <p>Techcareer</p>
-    </>
+      <Courses/>
   );
 }
 
